@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Learning VueJS</title>
+    <title>Learning Vue-ChartJS</title>
     <link rel="stylesheet" href="/assets/css/app.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="icon" href="assets/img/vuejs.png">
@@ -13,8 +13,13 @@
   <body>
 
     <div class="page-wrap">
-      <h1>Pages</h1>
+      <h1>Vue ChartJS</h1>
       <main class="main-wrap">
+        <section class="app-wrapper" id="chart1">
+          asdf
+        </section>
+      </main>
+      <aside class="navigation">
         <ol id="sidemenu">
           <list-item
             v-for="link in links"
@@ -23,10 +28,12 @@
             v-bind:url="link.url"
           ></list-item>
         </ol>
-      </main>
+      </aside>
     </div>
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="/assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
   </body>
 </html>

@@ -9,7 +9,8 @@ new Vue({
     links: [
       { id: 0, text: 'Index', url: '/' },
       { id: 1, text: 'Tutorials', url: '/tutorials' },
-      { id: 2, text: 'Components', url: '/components' }
+      { id: 2, text: 'Components', url: '/components' },
+      { id: 2, text: 'Vue ChartJS', url: '/charts' }
     ]
   }
 })
