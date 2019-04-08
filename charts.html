@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="icon" href="assets/img/vuejs.png">
   </head>
-
   <body>
-
     <div class="page-wrap">
       <h1>Vue ChartJS</h1>
       <main class="main-wrap">
@@ -22,10 +20,10 @@
       <aside class="navigation">
         <ol id="sidemenu">
           <list-item
-            v-for="link in links"
-            v-bind:key="link.id"
+            v-for="(link, index) in links"
+            :key="index"
             v-bind:text="link.text"
-            v-bind:url="link.url"
+            v-bind:href="link.href"
           ></list-item>
         </ol>
       </aside>
@@ -35,5 +33,6 @@
     <script src="/assets/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
+    <script src="/assets/js/charts.js"></script>
   </body>
 </html>
