@@ -11,9 +11,13 @@
 
 	<body>
 
-    <!-- Vue Entry Point -->
+    <h1>Tutorial 5</h1>
+    <div id="app-5">
+      <p>{{ message }}</p>
+      <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
 
-    <h1>App 4</h1>
+    <h1>Tutorial 4</h1>
     <div id="app-4">
       <ol>
         <li v-for="todo in todos">
@@ -22,19 +26,19 @@
       </ol>
     </div>
 
-    <h1>App 3</h1>
+    <h1>Tutorial 3</h1>
     <div id="app-3">
       <span v-if="seen">Now you see me.</span>
     </div>
 
-    <h1>App 2</h1>
+    <h1>Tutorial 2</h1>
     <div id="app-2">
       <span v-bind:title="message">
         Hover your mouse over me for a few seconds to see my dynamically bound title!
       </span>
     </div>
 
-    <h1>App 1</h1>
+    <h1>Tutorial 1</h1>
     <div id="app" class="app">
       {{ message }}
     </div>
