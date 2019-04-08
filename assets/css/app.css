@@ -1,7 +1,38 @@
-html {
-  font-size: 1em;
+/* Define the "system" font family */
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
-body {
-  font-size: 2em;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.414;
+  margin: 0;
+  padding: 0;
+  font-family: 'system';
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: .75rem;
+}
+h6 {
+  font-size: .5rem;
 }
