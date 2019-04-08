@@ -39,7 +39,7 @@
             v-for="link in links"
             v-bind:key="link.id"
             v-bind:text="link.text"
-            v-bind:link="link.link"
+            v-bind:url="link.url"
           ></list-item>
         </ol>
       </aside>
@@ -47,6 +47,7 @@
 
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="/assets/js/app.js"></script>
     <script src="/assets/js/components.js"></script>
   </body>
 </html>

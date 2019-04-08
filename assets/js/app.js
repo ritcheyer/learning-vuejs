@@ -1,15 +1,15 @@
 Vue.component('list-item', {
-  props: ['text', 'link'],
-  template: '<li><a :href="link">{{ text }}</a></li>'
+  props: ['text', 'url'],
+  template: '<li><a :href="url">{{ text }}</a></li>'
 })
 
 new Vue({
   el: '#sidemenu',
   data: {
     links: [
-      { id: 0, text: 'Index', link: '/' },
-      { id: 1, text: 'Tutorials', link: '/tutorials' },
-      { id: 2, text: 'Components', link: '/components' }
+      { id: 0, text: 'Index', url: '/' },
+      { id: 1, text: 'Tutorials', url: '/tutorials' },
+      { id: 2, text: 'Components', url: '/components' }
     ]
   }
 })
