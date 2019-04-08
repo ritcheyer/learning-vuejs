@@ -18,21 +18,33 @@ html {
   font-family: 'system';
 }
 
-h1 {
-  font-size: 2rem;
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1rem; }
+h5 { font-size: .75rem; }
+h6 { font-size: .5rem; }
+
+
+.page-wrap {
+  width: calc(100% - 2rem);
+  margin: auto;
 }
-h2 {
-  font-size: 1.5rem;
+
+.main-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: stretch;
 }
-h3 {
-  font-size: 1.25rem;
-}
-h4 {
-  font-size: 1rem;
-}
-h5 {
-  font-size: .75rem;
-}
-h6 {
-  font-size: .5rem;
+
+.app-wrapper {
+  width: calc(50% - .5rem);
+  padding: 1rem;
+  margin: .5rem 0;
+  background-color: rgb(235, 235, 235);
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  max-width: 50%;
 }

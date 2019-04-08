@@ -1,66 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tutorials | Learning VueJS</title>
-    <link rel="stylesheet" href="/assets/css/app.css" />
-    <link rel="icon" href="assets/img/vuejs.png" />
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="icon" href="assets/img/vuejs.png">
   </head>
 
   <body>
 
-    <section>
-      <h1>Tutorials</h1>
-      <h2>Tutorial 6</h2>
-      <div id="app-6">
-        <p>{{ message }}</p>
-        <input v-model="message">
-        </div>
+    <div class="page-wrap">
+      <h1>VueJS Tutorials</h1>
 
-        <h2>Tutorial 5</h2>
-        <div id="app-5">
-          <p>{{ message }}</p>
-          <button v-on:click="reverseMessage">Reverse Message</button>
-        </div>
+      <main class="main-wrap">
 
-        <h2>Tutorial 4</h2>
-        <div id="app-4">
+        <section class="app-wrapper" id="app">
+          <h2>Tutorial 1</h2>
+          {{ message }}
+        </section>
+
+        <section class="app-wrapper" id="app-2">
+          <h2>Tutorial 2</h2>
+          <span v-bind:title="message">
+            Hover your mouse over me for a few seconds to see my dynamically bound title!
+          </span>
+        </section>
+
+        <section class="app-wrapper" id="app-3">
+          <h2>Tutorial 3</h2>
+          <span v-if="seen">Now you see me.</span>
+        </section>
+
+        <section class="app-wrapper" id="app-4">
+          <h2>Tutorial 4</h2>
           <ol>
             <li v-for="todo in todos">
               {{ todo.text }}
             </li>
           </ol>
-        </div>
+        </section>
 
-        <h2>Tutorial 3</h2>
-        <div id="app-3">
-          <span v-if="seen">Now you see me.</span>
-        </div>
+        <section class="app-wrapper" id="app-5">
+          <h2>Tutorial 5</h2>
+          <p>{{ message }}</p>
+          <button v-on:click="reverseMessage">Reverse Message</button>
+        </section>
 
-        <h2>Tutorial 2</h2>
-        <div id="app-2">
-          <span v-bind:title="message">
-            Hover your mouse over me for a few seconds to see my dynamically bound title!
-          </span>
-        </div>
+        <section class="app-wrapper" id="app-6">
+          <h2>Tutorial 6</h2>
+          <p>{{ message }}</p>
+          <input v-model="message">
+        </section>
 
-        <h2>Tutorial 1</h2>
-        <div id="app" class="app">
-          {{ message }}
-        </div>
-      </section>
-
-
+      </main>
+      <aside class="navigation">
+        <ol id="sidemenu">
+          <list-item
+            v-for="link in links"
+            v-bind:key="link.id"
+            v-bind:text="link.text"
+            v-bind:link="link.link"
+          ></list-item>
+        </ol>
+      </aside>
+    </div>
 
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-    <!-- insert chartJS and vue-chartJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
-
     <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/tutorials.js"></script>
   </body>
 </html>
