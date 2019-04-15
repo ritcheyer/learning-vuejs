@@ -1,8 +1,7 @@
-// import { Bar } from 'vue-chartjs'
+import App from './App'
 
-// export default {
-//   extends: Bar,
-//   mounted () {
-//     this.renderChart(data, options)
-//   }
-// }
+new Vue({
+  el: '#chart',
+  template: '<App/>',
+  components: { App }
+})

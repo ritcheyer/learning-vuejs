@@ -6,24 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Learning Vue-ChartJS</title>
     <link rel="stylesheet" href="/assets/css/app.css">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.css">
     <link rel="icon" href="assets/img/vuejs.png">
   </head>
   <body>
     <div class="page-wrap">
       <h1>Vue ChartJS</h1>
       <main class="main-wrap">
-        <section class="app-wrapper" id="chart1">
-          asdf
-        </section>
+        <section class="app-wrapper" id="chart"></section>
       </main>
       <aside class="navigation">
         <ol id="sidemenu">
           <list-item
-            v-for="(link, index) in links"
+            v-for="(item, index) in links"
             :key="index"
-            v-bind:text="link.text"
-            v-bind:href="link.href"
+            v-bind:text="item.text"
+            v-bind:href="item.href"
           ></list-item>
         </ol>
       </aside>
