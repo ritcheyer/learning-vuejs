@@ -15,15 +15,17 @@
     <div class="page-wrap">
       <h1>Pages</h1>
       <main class="main-wrap">
+      </main>
+      <aside class="navigation">
         <ol id="sidemenu">
           <list-item
-            v-for="item in links"
-            :key="index"
-            v-bind:text="item.text"
-            v-bind:href="item.url"
+            v-for="link in links"
+            :key="link.id"
+            v-bind:text="link.text"
+            v-bind:url="link.url"
           ></list-item>
         </ol>
-      </main>
+      </aside>
     </div>
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

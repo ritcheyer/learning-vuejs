@@ -68,6 +68,7 @@
         </section>
 
         <section class="app-wrapper" id="app-9">
+          <h2>Tutorial 9</h2>
           <p>
             Ask a yes/no question:
             <input v-model="question">
@@ -75,12 +76,16 @@
           <p>{{ answer }}</p>
         </section>
 
+        <section class="app-wrapper" id="app-10">
+          <h2>Tutorial 10</h2>
+        </section>
+
       </main>
       <aside class="navigation">
         <ol id="sidemenu">
           <list-item
-            v-for="(link, index) in links"
-            :key="index"
+            v-for="link in links"
+            :key="link.id"
             v-bind:text="link.text"
             v-bind:url="link.url"
           ></list-item>

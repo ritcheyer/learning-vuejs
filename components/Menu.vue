@@ -8,7 +8,7 @@
 
 <script>
   export default {
-    name: 'Side Nav',
+    name: 'Menu',
     // props: {},
     data: () => {
       return {

@@ -31,6 +31,12 @@ h6 { font-size: .5rem; }
 .page-wrap {
   width: calc(100% - 2rem);
   margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.page-wrap h1 {
+  order: -1;
 }
 
 .main-wrap {
@@ -49,4 +55,10 @@ h6 { font-size: .5rem; }
   border: 1px solid #10161d;
   border-radius: 4px;
   max-width: 50%;
+}
+
+
+.navigation {
+  order: -1;
+  width: 100%
 }

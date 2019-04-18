@@ -105,8 +105,7 @@ var vm3 = new Vue({
     question: function (newQuestion, oldQuestion) {
       this.answer = 'Waiting for you to stop typing...'
       this.debouncedGetAnswer()
-    }
-  },
+    }  },
   created: function () {
     // _.debounce is a function provided by lodash to limit how
     // often a particularly expensive operation can be run.
@@ -135,3 +134,4 @@ var vm3 = new Vue({
     }
   }
 })
+

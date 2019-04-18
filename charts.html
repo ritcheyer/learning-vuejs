@@ -18,10 +18,10 @@
       <aside class="navigation">
         <ol id="sidemenu">
           <list-item
-            v-for="(item, index) in links"
-            :key="index"
-            v-bind:text="item.text"
-            v-bind:href="item.href"
+            v-for="link in links"
+            :key="link.id"
+            v-bind:text="link.text"
+            v-bind:url="link.url"
           ></list-item>
         </ol>
       </aside>
